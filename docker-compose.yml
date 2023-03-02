@@ -1,0 +1,113 @@
+version: "3"
+volumes:
+  prometheus_data: {}
+  
+services:
+
+  eureka-service:
+    image: eureka-server
+    ports:
+      - "8761:8761"
+    networks:
+      - test-network
+
+
+  stock-service:
+    image: stock-service
+    environment:
+      - JAVA_OPTS=
+        -DEUREKA_SERVER=http://eureka-service:8761/eureka
+        -DZIPKIN_SERVER=http://zipkin:9411/
+    ports:
+      - "8800:8800"
+    #    links:
+    #      - zipkin
+    depends_on:
+      - eureka-service
+    #      - zipkin
+    networks:
+      - test-network
+
+
+  enquiry-service:
+    image: enquiry-service
+    environment:
+      - JAVA_OPTS=
+        -DEUREKA_SERVER=http://eureka-service:8761/eureka
+        -DZIPKIN_SERVER=http://zipkin:9411/
+    ports:
+      - "8700:8700"
+    #   links:
+    #     - zipkin
+    depends_on:
+      - stock-service
+    #     - zipkin
+    networks:
+      - test-network
+
+
+  gateway-service:
+    image: gateway-service
+    environment:
+      - JAVA_OPTS=
+        -DEUREKA_SERVER=http://eureka-service:8761/eureka
+        -DZIPKIN_SERVER=http://zipkin:9411/
+ 
+    ports:
+      - "8900:8900"
+    #   links:
+    #     - zipkin
+    depends_on:
+      - eureka-service
+      - enquiry-service
+      - stock-service
+    #      - zipkin
+    networks:
+      - test-network
+
+
+  prometheus:
+    image: prom/prometheus
+    volumes:
+      - ./config/:/etc/prometheus
+      - ./data/prometheus:/data
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--storage.tsdb.retention=31d'
+      - '--web.console.libraries=/usr/share/prometheus/console_libraries'
+      - '--web.console.templates=/usr/share/prometheus/consoles'
+    ports:
+      - "9090:9090"
+    depends_on:
+      - stock-service
+    networks:
+      - test-network
+
+
+  grafana:
+    image: grafana/grafana
+    ports:
+      - "3000:3000"
+    depends_on:
+      - prometheus
+    networks:
+      - test-network
+
+
+  zipkin:
+    image: openzipkin/zipkin
+    environment:
+      - STORAGE_TYPE=mem
+    ports:
+      - "9411:9411"
+    depends_on:
+      - eureka-service
+    networks:
+      - test-network
+
+
+
+networks:
+  test-network:
+
