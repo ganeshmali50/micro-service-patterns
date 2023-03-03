@@ -1,0 +1,48 @@
+2022-09-06 10:15:10.942  INFO 24276 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-09-06 10:15:11.713  INFO 24276 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2022-09-06 10:15:11.714  INFO 24276 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-09-06 10:15:11.721  INFO 24276 --- [RMI TCP Connection(2)-127.0.0.1] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-09-06 10:15:11.734  INFO 24276 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-09-06 10:15:11.736  INFO 24276 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-09-06 10:15:11.744  INFO 24276 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-09-06 10:21:55.889  INFO 17244 --- [main] c.e.p.p.PlantfinderApiApplication        : Starting PlantfinderApiApplication on HUW42NLPC0630 with PID 17244 (D:\workspace-santam\demo-monotoring-api-composite-service-health-checkup\target\classes started by GM55491 in D:\workspace-santam\demo-monotoring-api-composite-service-health-checkup)
+2022-09-06 10:21:55.893  INFO 17244 --- [main] c.e.p.p.PlantfinderApiApplication        : No active profile set, falling back to default profiles: default
+2022-09-06 10:21:57.164  INFO 17244 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2022-09-06 10:21:57.198  INFO 17244 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23ms. Found 0 JPA repository interfaces.
+2022-09-06 10:21:57.850  INFO 17244 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2022-09-06 10:21:57.862  INFO 17244 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-06 10:21:57.862  INFO 17244 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-09-06 10:21:58.295  INFO 17244 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-06 10:21:58.295  INFO 17244 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2320 ms
+2022-09-06 10:21:58.441  WARN 17244 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'custom-rest-endpoint' contains invalid characters, please migrate to a valid format.
+2022-09-06 10:21:58.442  WARN 17244 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'custom-endpoint' contains invalid characters, please migrate to a valid format.
+2022-09-06 10:21:58.648  INFO 17244 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-09-06 10:21:58.672  INFO 17244 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-09-06 10:21:58.880  INFO 17244 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-09-06 10:21:58.936  INFO 17244 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-06 10:21:59.011  WARN 17244 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-09-06 10:21:59.029  INFO 17244 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+2022-09-06 10:21:59.264  INFO 17244 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-09-06 10:21:59.471  INFO 17244 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-09-06 10:21:59.559  INFO 17244 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2022-09-06 10:21:59.777  INFO 17244 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-06 10:21:59.789  INFO 17244 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-06 10:22:00.010  INFO 17244 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5c573229, org.springframework.security.web.context.SecurityContextPersistenceFilter@726a8729, org.springframework.security.web.header.HeaderWriterFilter@4fe2dd02, org.springframework.security.web.csrf.CsrfFilter@395a573c, org.springframework.security.web.authentication.logout.LogoutFilter@7b451bf4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5c5c7cc4, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5b4954b2, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@77ecdc2b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@502c2278, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7dd91ffc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@ec5f944, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@714f1a44, org.springframework.security.web.session.SessionManagementFilter@5817f1ca, org.springframework.security.web.access.ExceptionTranslationFilter@1584c019, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7de3206d]
+2022-09-06 10:22:00.088  INFO 17244 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoint(s) beneath base path '/actuator'
+2022-09-06 10:22:00.209  INFO 17244 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2022-09-06 10:22:00.212  INFO 17244 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2022-09-06 10:22:00.213  INFO 17244 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2022-09-06 10:22:00.235  INFO 17244 --- [main] c.e.p.p.PlantfinderApiApplication        : Started PlantfinderApiApplication in 4.902 seconds (JVM running for 7.769)
+2022-09-06 10:22:03.126  INFO 17244 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-06 10:22:03.130  INFO 17244 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-06 10:22:03.151  INFO 17244 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2022-09-06 10:22:04.291  WARN 17244 --- [http-nio-8083-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [794] milliseconds.
+2022-09-06 10:22:05.401  WARN 17244 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=Plantfinder API Service, managementUrl=http://localhost:8083/actuator, healthUrl=http://localhost:8083/actuator/health, serviceUrl=http://localhost:8083/) at spring-boot-admin ([http://localhost:8888/instances]): I/O error on POST request for "http://localhost:8888/instances": Read timed out; nested exception is java.net.SocketTimeoutException: Read timed out. Further attempts are logged on DEBUG level
+2022-09-06 10:22:10.377  INFO 17244 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as f88e3dca64bb
+2022-09-06 10:24:55.218  INFO 17244 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-09-06 10:24:55.801  INFO 17244 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2022-09-06 10:24:55.801  INFO 17244 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-09-06 10:24:55.802  INFO 17244 --- [RMI TCP Connection(2)-127.0.0.1] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-09-06 10:24:55.805  INFO 17244 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-09-06 10:24:55.805  INFO 17244 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-09-06 10:24:55.810  INFO 17244 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
