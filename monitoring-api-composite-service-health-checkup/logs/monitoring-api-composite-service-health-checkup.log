@@ -1,0 +1,41 @@
+2023-03-03 16:08:09.669  INFO 24436 --- [main] c.i.learning.PlantfinderApiApplication   : Starting PlantfinderApiApplication on HUW42NLPC0630 with PID 24436 (D:\workspace-santam\monitoring-api-composite-service-health-checkup\target\classes started by GM55491 in D:\workspace-santam\monitoring-api-composite-service-health-checkup)
+2023-03-03 16:08:09.669  INFO 24436 --- [main] c.i.learning.PlantfinderApiApplication   : No active profile set, falling back to default profiles: default
+2023-03-03 16:08:10.930  INFO 24436 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2023-03-03 16:08:10.992  INFO 24436 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30ms. Found 0 JPA repository interfaces.
+2023-03-03 16:08:11.643  INFO 24436 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2023-03-03 16:08:11.659  INFO 24436 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-03 16:08:11.659  INFO 24436 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2023-03-03 16:08:11.961  INFO 24436 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-03 16:08:11.962  INFO 24436 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2224 ms
+2023-03-03 16:08:12.098  WARN 24436 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'custom-rest-endpoint' contains invalid characters, please migrate to a valid format.
+2023-03-03 16:08:12.098  WARN 24436 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'custom-endpoint' contains invalid characters, please migrate to a valid format.
+2023-03-03 16:08:12.329  INFO 24436 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-03-03 16:08:12.361  INFO 24436 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-03 16:08:12.561  INFO 24436 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-03 16:08:12.630  INFO 24436 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-03 16:08:12.730  WARN 24436 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-03 16:08:12.777  INFO 24436 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+2023-03-03 16:08:13.031  INFO 24436 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-03-03 16:08:13.216  INFO 24436 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-03-03 16:08:13.316  INFO 24436 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2023-03-03 16:08:13.523  INFO 24436 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-03 16:08:13.539  INFO 24436 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-03 16:08:13.779  INFO 24436 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5d27b4c1, org.springframework.security.web.context.SecurityContextPersistenceFilter@9205c0a, org.springframework.security.web.header.HeaderWriterFilter@5b4954b2, org.springframework.security.web.csrf.CsrfFilter@4fe2dd02, org.springframework.security.web.authentication.logout.LogoutFilter@138a85d3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5c573229, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@844e66d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@50df37eb, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@156cfa20, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2f1f9515, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7b451bf4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4b508371, org.springframework.security.web.session.SessionManagementFilter@3973b6d4, org.springframework.security.web.access.ExceptionTranslationFilter@45e11627, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@696174d3]
+2023-03-03 16:08:13.833  INFO 24436 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoint(s) beneath base path '/actuator'
+2023-03-03 16:08:13.917  INFO 24436 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2023-03-03 16:08:13.917  INFO 24436 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2023-03-03 16:08:13.917  INFO 24436 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2023-03-03 16:08:13.951  INFO 24436 --- [main] c.i.learning.PlantfinderApiApplication   : Started PlantfinderApiApplication in 4.798 seconds (JVM running for 7.309)
+2023-03-03 16:08:15.581  INFO 24436 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-03 16:08:15.581  INFO 24436 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-03 16:08:15.605  INFO 24436 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2023-03-03 16:08:16.855  WARN 24436 --- [http-nio-8083-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [971] milliseconds.
+2023-03-03 16:08:17.028  INFO 24436 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as f88e3dca64bb
+2023-03-03 16:10:46.163  INFO 24436 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-03-03 16:10:46.800  INFO 24436 --- [RMI TCP Connection(3)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-03-03 16:10:47.109  INFO 24436 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2023-03-03 16:10:47.109  INFO 24436 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-03 16:10:47.109  INFO 24436 --- [RMI TCP Connection(2)-127.0.0.1] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-03-03 16:10:47.109  INFO 24436 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-03-03 16:10:47.109  INFO 24436 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-03 16:10:47.109  INFO 24436 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
